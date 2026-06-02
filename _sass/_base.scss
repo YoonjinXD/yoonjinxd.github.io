@@ -37,10 +37,10 @@ table {
 
 a,
 table.table a {
-  color: var(--global-theme-color);
+  color: var(--global-text-color);
 
   &:hover {
-    color: var(--global-theme-color);
+    color: var(--global-text-color);
     text-decoration: underline;
   }
 
@@ -225,6 +225,29 @@ ul.task-list input[type="checkbox"] {
       }
     }
   }
+}
+
+.nickname {
+  font-size: 0.55em;
+  font-weight: 400;
+  color: var(--global-text-color-light);
+  margin-left: 0.4em;
+  vertical-align: middle;
+}
+
+// About page header spacing — adjust these two values to control gaps
+.post-header {
+  margin-bottom: 2rem; // gap between position/subtitle and self-introduction
+}
+
+p.desc {
+  margin-top: 0.75rem; // gap between name and position/subtitle
+}
+
+// About page section gaps — adjust margin-top to control spacing before each section
+.post article h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .post-description {
@@ -412,23 +435,23 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2rem;
 
     a {
       img {
-        width: 3.2rem;
-        height: 3.2rem;
+        width: 1.6rem;
+        height: 1.6rem;
         margin-bottom: 1rem;
       }
 
       svg {
-        width: 3.5rem;
-        height: 4rem;
+        width: 1.75rem;
+        height: 2rem;
         margin-bottom: 0.5rem;
 
         image {
-          width: 3.5rem;
-          height: 3.5rem;
+          width: 1.75rem;
+          height: 1.75rem;
         }
       }
 
