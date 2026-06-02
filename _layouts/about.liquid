@@ -10,7 +10,9 @@ layout: default
       {% else %}
         {{ site.title }}
       {% endif %}
-      {% if page.nickname %}<span class="nickname">{{ page.nickname }}</span>{% endif %}
+      {% if page.nickname -%}
+        <span class="nickname">{{ page.nickname }}</span>
+      {%- endif %}
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
   </header>
